@@ -1,0 +1,112 @@
+### INSERIMENTO
+
+POST  http://localhost:3011/api/professor
+Content-Type: application/json
+
+{
+    "firstName" : "Alberto",
+    "lastName": "Verdi",
+    "dob": "1975-04-10",
+    "email": "albertone@gmail.com",
+    "password" :"123456"
+}
+###
+POST  http://localhost:3011/api/professor
+Content-Type: application/json
+
+{
+    "firstName" : "Mario",
+    "lastName": "Rossi",
+    "dob": "1980-02-21",
+    "email": "mario124@gmail.com",
+    "password" :"123456"
+}
+###
+
+POST  http://localhost:3011/api/degree
+Content-Type: application/json
+
+{
+    "name" : "Medicina",
+    "description": "Da noi si impara a curare la gente e a sentirsi superiori a tutte le altre facolta"
+}
+###
+POST  http://localhost:3011/api/degree
+Content-Type: application/json
+
+{
+    "name" : "Informatica L-31",
+    "description": "Corso bellissimo"
+}
+###
+POST  http://localhost:3011/api/degree
+Content-Type: application/json
+
+{
+    "name" : "Informatica Magistrale LM-18",
+    "description": "Corso super bellissimo"
+}
+###
+
+
+POST  http://localhost:3011/api/subject
+Content-Type: application/json
+
+{
+    "degree": {
+        "id" : "2"
+    },
+    "name" : "Fondamenti di informatica",
+    "cfu" : "9"
+}
+###
+
+POST  http://localhost:3011/api/register
+Content-Type: application/json
+
+{
+    "year" : "2022",
+    "professor": {
+        "id" : "3"
+    },
+    "subject": {
+        "id" : "1"
+    }
+}
+###
+
+POST  http://localhost:3011/api/activity
+Content-Type: application/json
+
+{
+    "activityType" : "lezione",
+    "topics" : "tante cose belle",
+    "classroom" : "Aula 2",
+    "date" : "2022-10-12",
+    "startTime" : "10:00",
+    "endTime" : "12:00",
+    "register": {
+        "id" : "2"
+    }
+}
+
+###
+
+POST  http://localhost:3000/api/auth/token
+Content-Type: application/json
+
+{
+    "token" : "token_0",
+    "professor": {
+        "id" : "2"
+    }
+}
+###
+POST  http://localhost:3000/api/auth/authenticate
+Content-Type: application/json
+
+{
+    "username" : "mario124@gmail.com",
+    "password": "123456"
+}
+###
