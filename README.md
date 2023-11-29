@@ -16,11 +16,13 @@ https://github.com/simog-97/Registro-Docenti-Backend
 
 All'interno della cartella del progetto, è possibile utilizzare il comando:
 
+
 ### `npm start`
 Lancia l'applicazione in modalità development
 
+
 ## `npm run build`
-Builda la app da mandare in produzione all'interno della cartella build.
+Builda la app da mandare in produzione all'interno della cartella build
 
 
 
