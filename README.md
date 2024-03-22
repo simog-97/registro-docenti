@@ -18,11 +18,11 @@ All'interno della cartella del progetto, è possibile utilizzare il comando:
 
 
 ### `npm start`
-Lancia l'applicazione in modalità development
+Per lanciare l'applicazione in modalità development
 
 
 ## `npm run build`
-Builda la app da mandare in produzione all'interno della cartella build
+Per buildare la app da mandare in produzione all'interno della cartella build
 
 
 
