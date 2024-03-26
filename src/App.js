@@ -16,25 +16,8 @@ import Footer from './utility_components/Footer';
 
 
 
-
-
-
-
-
 function App() {
-
-  // let role = sessionStorage.getItem("role")
-
   
-  // useEffect( () => {
-  //   let x = Cookies.get('role')
-  //   if(x !== 'student' && x !== 'professor'){
-  //     Cookies.set('role', 'guest')
-  //   }
-  //   console.log("setto guest")
-  // }, []);
-
-
   const [isLogged, setIsLogged] = useState(false)
   const setLoggedIn = () => {
     setIsLogged(true)
@@ -61,9 +44,7 @@ function App() {
   <Navbar logOps= {logOps}></Navbar>
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/login" element={<Login />} /> */}
       <Route path="/prof-login" element={<ProfLogin logOps= {logOps}/>} />
-      {/* <Route path="/student-login" element={<StudentLogin logOps= {logOps}/>} /> */}
       <Route path="/logout-procedure" element={<LogOutProcedure  logOps= {logOps}/>} />
       <Route path="/register/:id" element={<RegisterDetails />} />
       <Route path="/add-activity/:registerId" element={<AddActivity />} />
@@ -75,21 +56,6 @@ function App() {
   </BrowserRouter>
   </div>
   );
-  // <div>
-  // <BrowserRouter>
-  // <Navbar isLogged={isLogged} setLoggedIn={setLoggedIn} setLoggedOut={setLoggedOut}></Navbar>
-  //   <Routes>
-  //     <Route path="/" element={<Home />} />
-  //     <Route path="/login" element={<Login />} />
-  //     <Route path="/prof-login" element={<ProfLogin isLogged={isLogged} setLoggedIn={setLoggedIn} setLoggedOut={setLoggedOut}/>} />
-  //     <Route path="/student-login" element={<StudentLogin isLogged={isLogged} setLoggedIn={setLoggedIn} setLoggedOut={setLoggedOut}/>} />
-  //     <Route path="/logout-procedure" element={<LogOutProcedure isLogged={isLogged} setLoggedIn={setLoggedIn} setLoggedOut={setLoggedOut} />} />
-  //     <Route path="*" element={<NotFound/>} />
-  //   </Routes>
-  // </BrowserRouter>
-  // </div>
-  // );
-  
   
 }
 
